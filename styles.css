@@ -1,3 +1,11 @@
+html{
+  scroll-behavior: smooth;
+}
+
+body{
+  overflow-x: scroll;
+}
+
 .menubar {
    left: 0;
     background-color: rgb(20,20,20);
@@ -17,8 +25,16 @@
      right: 0%;
      transition: all 0ms;
  } 
-
-  
+ section{
+   height: 85vh;
+   padding: 5px;
+   margin: 20px;
+ }
+ #FP{
+  height: 85vh;
+  padding: 5%;
+  margin: 20px;
+ }
   
   .transform-active {
     background-color: rgb(20, 20, 20);   
@@ -37,24 +53,28 @@
      position: fixed;
      right: 0%;
  }
+ .sticky{
+   position: -webkit-sticky;
+   position: sticky;
+   top: 10px;
+   margin-left: 10px;
+
+ }
 .button {
-  left: 10px;
-  position: relative;
-  top: 20px;
   border: 0px;
   color: rgb(223, 171, 0);
   background: transparent;
   text-size-adjust: 40px;
 }
-.fppara{position: relative;
+.fppara{
   color: rgb(223, 171, 0);
-  left: 0%;
-  top: 30%;
+
+ 
   margin: auto;
   padding: 0;
   text-align: center;
   overflow-x: visible;
-  position: relative;
+  
 }
 .menu{
   color: rgb(223, 171, 0);
@@ -89,6 +109,22 @@ font-size: 50px;
   color: rgb(255, 255, 255);
   background-color: rgb(153, 125, 0);
  
+}
+.fp{
+  justify-content: center;
+}
+.nextpg{
+  padding: 3px;
+  color: azure;
+  opacity: 0.75;
+  font-size: 25px;
+  width: 150px
+}
+.nextpg:hover{
+  color: azure;
+  opacity: 1;
+  border: solid white 1px;
+  background-color: rgb(83, 83, 83);
 }
 
 
