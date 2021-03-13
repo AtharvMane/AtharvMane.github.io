@@ -1,60 +1,82 @@
-<html>
-    <head>
-        <title>
-            Atharv
-            </title>
-            <link rel="stylesheet" href="../styles.css"/>
-            <link rel="stylesheet" href="./bootstrap-5.0.0-beta2-dist/css/bootstrap.min.css">
-            <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
-            <meta name="viewport" content="width=device-width, initial-scale=1.0">
-            <script src="https://kit.fontawesome.com/yourcode.js" crossorigin="anonymous"></script>
-            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-        </head>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../style.css"/>
+    <link rel="stylesheet" href="./bootstrap-5.0.0-beta2-dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/yourcode.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>About Me</title>
+</head>
+<body>
 
-        <body style="color: white;">
-            <script>
-                function myFunc(){
-                    document.getElementById('menubar').className='transform-active';
-                    document.getElementById('mainpage').className='mainpage-active';
-                    }
-                    function notmyFunc(){
-                    document.getElementById('menubar').className='menubar';
-                    document.getElementById('mainpage').className='mainpage';}
-                </script>
-            <div class="menubar" id="menubar">
-                    <a class="menulist">Home</a>
-                    <a class="menulist">My Work</a>
-                    <a class="menulist">About Me</a>
-                    <a class="menulist">Connect with Me</a>
-            </div>
-            <div class="mainpage" id="mainpage" style="overflow-y: scroll;">
-                <div class="sticky">
-                <button type="button" id="button" class="button" onclick="myFunc()"><i class="fa fa-angle-double-right fa-2x" aria-hidden="true"></i></button><br>
-                <button type="button" id="button" class="button" onclick="notmyFunc()"><i class="fa fa-angle-double-left fa-2x" aria-hidden="true"></i></button><br>
-                </div>
-                <header>
-                <section class="fp container" style="justify-content: center; align-items: center;" id="FP">
-                    <div class="fppara container" style="justify-content: center; padding-top: 15%;">
-                        <h1 id="type" class="container fppara"></h1>
-                        <p class="container fppara" id="secondaryfppara">An Undergraduate student at BITS Pilani KK Birla Goa campus</p>
-                        <p class="container fppara" id="secondaryfppara" style="animation-delay: 3s;">Welcome to my Website</p><br>
-                        <div class="nextpg" style="margin-left: 40%;"><a href="#abtme" style="color: azure;">About Me</a><br><a href="#abtme" class="fa fa-angle-down" style="color: azure;"></a>
-                   </div> </div>
-                </section>
-            </header>
-
-                <section id="abtme" class="container">
-                    <div style="text-align: center;"><h2><u>About Me</u></h1></div>
-                </section>
-
-           
-                
-            </div>
-           
-                
-
-            <script src="./firstpage.js"></script>
-           
+    <script>
+        function myFunc()
+        {
+            document.getElementById('menubar').className='menubar-active';
+            document.getElementById('maindiv').className='maindiv-active';
+        }
         
-        </body>
+        function notmyFunc()
+        {
+            document.getElementById('menubar').className='menubar';
+            document.getElementById('maindiv').className='maindiv';
+        }
+
+    </script>
+
+    
+    
+    <div class="menubar" id="menubar">
+        
+        <a class="menulist" href="#firstpage">Home</a>
+        <a class="menulist" href="#abtme">My Work</a>
+        <a class="menulist">About Me</a>
+        <a class="menulist">Connect with Me</a>
+    
+    </div>
+    
+    <div class="maindiv" id="maindiv">
+        
+        <span style="position: sticky; top: 10px;">
+            <button type="button" id="button" class="button" onclick="myFunc()"><i class="fa fa-angle-double-right fa-2x" aria-hidden="true"></i></button><br>
+            <button type="button" id="button" class="button" onclick="notmyFunc()" ><i class="fa fa-angle-double-left fa-2x" aria-hidden="true"></i></button><br>
+        </span>
+
+    
+        <div class="pages" id="firstpage" style="overflow-y: auto;" >
+ 
+            <div class="fppara container" style="position: relative; top: 200px;">
+                
+                    <h1 id="type" class="container fppara"></h1>
+            
+                    <p class="container fppara" id="secondaryfppara">
+                        An Undergraduate student at BITS Pilani KK Birla Goa campus
+                    </p>
+            
+                    <p class="container fppara" id="secondaryfppara" style="animation-delay: 3s;">
+                        Welcome to my Website
+                    </p>
+            
+                <br>
+            
+
+                
+                       <a href="#abtme" class="nextpg">About Me</a><br><a href="#abtme" class="fa fa-angle-down nextpg" style="color: azure;"></a>
+            
+
+
+            </div>
+    
+        </div>
+    
+    <div class="pages" id="abtme" style="color: burlywood;">hello</div>
+    </div>
+    
+    <script src="./firstpage.js"></script>
+</body>
 </html>

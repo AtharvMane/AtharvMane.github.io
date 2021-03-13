@@ -1,0 +1,102 @@
+html{
+
+}
+.maindiv{
+    position: fixed; 
+    width: 100%; 
+    height: 100vh; 
+    overflow: scroll;
+    background-color: rgb(34, 34, 34);
+    right: 0;
+    scroll-behavior: smooth;
+}
+.maindiv-active{
+    position: fixed; 
+    width: 80%; 
+    height: 100vh; 
+    overflow: scroll;
+    background-color: rgb(34, 34, 34);
+    right: 0;
+    transition: all 500ms;
+    scroll-behavior: smooth;
+}
+
+.fppara{
+    text-align: center;
+    color: rgb(223, 171, 0);
+}
+#secondaryfppara{
+    opacity: 0; 
+    font-size: 20px;
+    animation: mymove 1s forwards;
+    animation-delay: 2s;
+}
+.menubar{
+    position: fixed; 
+    width: 0%; 
+    height: 100vh; 
+    background-color: rgb(20, 20, 20); 
+
+  }
+  .menubar-active{
+    position: fixed; 
+    width: 20%; 
+    height: 100vh; 
+    background-color: rgb(20, 20, 20); 
+    transition: all 500ms;
+}
+
+.button {
+    left: 10px;
+    top: 20px;
+    border: 0px;
+    color: rgb(223, 171, 0);
+    background: transparent;
+    text-size-adjust: 40px;
+}
+.menulist {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: rgb(223, 171, 0);
+    display: block;
+    transition: 0.3s;
+    border-radius: 8px;
+  
+}
+  
+  
+.menulist:hover{
+    color: rgb(255, 255, 255);
+    background-color: rgb(153, 125, 0);
+}
+
+.pages{
+    height: 100vh;
+    margin: 50px;
+}
+.nextpg{
+    opacity: 0;
+    font-size: 20px;
+    padding: 3px;
+    color: azure;
+    font-size: 25px;
+    animation: mymove1 1s forwards;
+    animation-delay: 4s;
+}
+
+.nextpg:hover{
+    color: azure;
+    opacity: 1;
+}
+
+
+@keyframes mymove {
+    from {opacity: 0;}
+    to {opacity: 1;}
+}
+
+@keyframes mymove1 {
+    from {opacity: 0;}
+    to {opacity: 0.75;}
+}
