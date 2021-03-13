@@ -10,7 +10,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://kit.fontawesome.com/yourcode.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <title>About Me</title>
+    <title>Atharv Mane</title>
 </head>
 <body>
 
@@ -26,12 +26,17 @@
             document.getElementById('menubar').className='menubar';
             document.getElementById('maindiv').className='maindiv';
         }
+        function abcd(){
+            document.getElementById('maindiv').onclick += notmyFunc;
+        }
+        window.onload+=abcd;
+        
 
     </script>
 
     
     
-    <div class="menubar" id="menubar">
+    <div class="menubar container" id="menubar">
         
         <a class="menulist" href="#firstpage">Home</a>
         <a class="menulist" href="#abtme">My Work</a>
@@ -40,7 +45,7 @@
     
     </div>
     
-    <div class="maindiv" id="maindiv">
+    <div class="maindiv" id="maindiv" >
         
         <span style="position: sticky; top: 10px;">
             <button type="button" id="button" class="button" onclick="myFunc()"><i class="fa fa-angle-double-right fa-2x" aria-hidden="true"></i></button><br>
@@ -48,9 +53,9 @@
         </span>
 
     
-        <div class="pages" id="firstpage" style="overflow-y: auto;" >
+        <div class="pages" id="firstpage" style="overflow-y: auto;" onclick="notmyFunc()" >
  
-            <div class="fppara container" style="position: relative; top: 200px;">
+            <div class="fppara container" style="position: relative; top: 80px;">
                 
                     <h1 id="type" class="container fppara"></h1>
             
@@ -66,7 +71,7 @@
             
 
                 
-                       <a href="#abtme" class="nextpg">About Me</a><br><a href="#abtme" class="fa fa-angle-down nextpg" style="color: azure;"></a>
+                       <a href="#abtme" class="nextpg">My Projekts</a><br><a href="#abtme" class="fa fa-angle-down nextpg" style="color: azure;"></a>
             
 
 
@@ -74,7 +79,11 @@
     
         </div>
     
-    <div class="pages" id="abtme" style="color: burlywood;">hello</div>
+        <div class="pages" id="abtme" onclick="notmyFunc()">
+            
+            <h1 class="heading">My Projekts</h1>
+            <hr>
+        </div>
     </div>
     
     <script src="./firstpage.js"></script>
