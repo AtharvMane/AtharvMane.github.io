@@ -13,7 +13,7 @@ html{
 }
 .maindiv-active{
     position: fixed; 
-    width: 80.001%; 
+    max-width: 60.001%; 
     height: 100vh; 
     overflow-y: scroll;
     background-color: rgb(34, 34, 34);
@@ -41,7 +41,7 @@ html{
   }
   .menubar-active{
     position: fixed; 
-    width: 20%; 
+    min-width: 40%; 
     height: 100vh; 
     background-color: rgb(20, 20, 20); 
     transition: all 500ms;
