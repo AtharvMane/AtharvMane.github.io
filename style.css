@@ -45,6 +45,7 @@ html{
     height: 100vh; 
     background-color: rgb(20, 20, 20); 
     transition: all 500ms;
+    overflow-x: scroll;
 }
 
 .button {
@@ -73,7 +74,7 @@ html{
 }
 
 .pages{
-    height: 100vh;
+    height: 170vh;
     padding: 50px;
     top: 0;
 }
@@ -120,4 +121,39 @@ html{
   
   .card:hover {
     box-shadow: 0 4px 4px 0 rgb(146, 145, 145);
+  }
+
+.no{
+    text-decoration:none; 
+    color: goldenrod;
+    border-bottom:2px solid goldenrod;
+  }
+  .box{
+      padding:60px 0px;
+  }
+  
+  .box-part{
+      background:rgb(34, 34, 34);
+      border-radius:4px;
+      border: solid goldenrod;
+      padding:60px 10px;
+      margin:30px 0px;
+  }
+  .text{
+      margin:20px 0px;
+  }
+  
+  .fa{
+       color:goldenrod;
+  }
+  h4{
+      color: goldenrod;
+  }
+  a{
+      text-decoration: none;
+  }
+  img{
+      display: block;
+      margin: auto;
+
   }
